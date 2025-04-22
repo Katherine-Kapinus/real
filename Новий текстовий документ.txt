@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link href="https://fonts.googleapis.com/css?family=Manrope:regular,500,600,700,800&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/home.ico" type="image/x-icon">
+    <title>Real Estate</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <header class="container">
+                container
+            </header>
+        </header>
+        <main class="page">
+            main
+        </main>
+        <footer class="footer">
+            footer
+        </footer>
+    </div>
+</body>
+</html>
+
+
+||||||||||||||||||||||||||||||||
+
+@import 'nullstyle';
+
+
+body{
+    font-family: 'Manrope', sans-serif;
+    color: #333;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+[class*= 'container'] {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200.98px) {
+    [class*= 'container'] {
+        max-width: 790px;
+    }    
+}
+
+@media (max-width: 990.98px) {
+    [class*= 'container'] {
+        max-width: 750.98px;
+    }    
+}
+@media (max-width: 767.98px) {
+    [class*= 'container'] {
+        max-width: none;
+        padding: 0 15px;
+    }    
+}
+
+.page{
+    flex: 1 1 auto;
+}

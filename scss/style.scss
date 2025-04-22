@@ -1,0 +1,45 @@
+
+
+
+@import 'nullstyle';
+
+
+body{
+    font-family: 'Manrope', sans-serif;
+    color: #333;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+[class*= 'container'] {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200.98px) {
+    [class*= 'container'] {
+        max-width: 790px;
+    }    
+    
+}
+
+@media (max-width: 990.98px) {
+    [class*= 'container'] {
+        max-width: 750.98px;
+    }    
+}
+@media (max-width: 767.98px) {
+    [class*= 'container'] {
+        max-width: none;
+        padding: 0 15px;
+    }    
+}
+
+.page{
+    flex: 1 1 auto;
+}
