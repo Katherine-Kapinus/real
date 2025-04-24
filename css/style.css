@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a, *::before, *::after {
+  display: inline-block;
+}
+
+.header__container {
+  min-height: 103px;
+  padding: 10px 0;
+}
+@media (min-width: 768px) {
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+}
+.header__logo {
+  font-size: 23px;
+  font-weight: 800;
+}
+.navigation__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 46px;
+       column-gap: 46px;
+  row-gap: 6px;
+}
+.navigation__item {
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+}
+.navigation__item:hover {
+  text-decoration: underline;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  color: #333;
+}
+body a {
+  color: #333;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+[class*=container] {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200.98px) {
+  [class*=container] {
+    max-width: 790px;
+  }
+}
+@media (max-width: 990.98px) {
+  [class*=container] {
+    max-width: 750.98px;
+  }
+}
+@media (max-width: 767.98px) {
+  [class*=container] {
+    max-width: none;
+    padding: 0 15px;
+  }
+}
+.page {
+  flex: 1 1 auto;
+}

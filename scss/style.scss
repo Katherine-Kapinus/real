@@ -1,12 +1,14 @@
 
-
-
 @import 'nullstyle';
+@import 'headerstyle';
 
 
 body{
     font-family: 'Manrope', sans-serif;
     color: #333;
+    & a{
+        color: #333;
+    }
 }
 
 .wrapper {
@@ -43,3 +45,4 @@ body{
 .page{
     flex: 1 1 auto;
 }
+
