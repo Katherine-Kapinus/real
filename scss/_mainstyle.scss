@@ -26,9 +26,11 @@
         display: flex;
         column-gap: 5%;
         margin-bottom: 14px;
+        align-items: flex-start;
     }
 
     &__content {
+        margin-top: 40px;
         flex: 0 1 50%;
         display: flex;
         flex-direction: column;
@@ -59,18 +61,19 @@
         height: 86px;
         position: relative;
         z-index: 2;
-        margin-top: 66px;
+        margin-top: 16px;
     }
     
     &__input {
         background: url('../img/Icon.svg') 33px 50% no-repeat;
         padding: 0 0 0 74px;
         flex: 1 0 110.5%;
-        border: 1px solid #dadada;
+        border: 1px solid #acabad;
+        border-right: none;
         box-shadow: 0 8.148148536682129px 6.518518447875977px 0 rgba(0,0,0,.01),0 20px 13px 0 rgba(0,0,0,.01),0 38.51852035522461px 25.481481552124023px 0 rgba(0,0,0,.02),0 64.81481170654297px 46.85185241699219px 0 rgba(0,0,0,.02),0 100px 80px 0 rgba(0,0,0,.03);
         font-size: 20px;
         &::placeholder {
-            color: #949aa3;
+            color: #919191;
         }
     }
 
@@ -149,24 +152,22 @@
 
 
 .swiper {
-    width: 603px;
-    height: 573px;
-    position: relative;
     box-shadow: 0 8px 6.5px 0 rgba(0,0,0,0.1),0 20px 13px 0 rgba(0,0,0,0.1),0 38px 25px 0 rgba(0,0,0,0.1),0 65px 47px 0 rgba(0,0,0,0.1),0 100px 80px 0 rgba(0,0,0,0.1);
 
     .swiper-wrapper {
-        height: 100%;
     }
 
     .swiper-slide {
-        height: 100%;
         position: relative;
+        padding-bottom: 95%;
 
         img {
+        position: absolute;
+        top: 0;
+        left: 0;
         height: 100%;
         width: 100%;
         object-fit: cover;
-        display: block;
         }
     }
 
