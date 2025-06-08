@@ -3,19 +3,10 @@
     top: 0;
     left: 0;
     width: 100%;
-
-    &__container {
-    }
 }
 
-.page {
 
-    &__main {
-    }
-}
 .main-block {
-
-
     &__container {
         padding-top: 184px;
         position: relative;
@@ -35,7 +26,6 @@
         display: flex;
         column-gap: 5%;
         margin-bottom: 14px;
-
     }
 
     &__content {
@@ -127,9 +117,11 @@
         flex: 0 1 50%;
     }
 
-    &__partners {
-    }
 }
+
+
+//- Partners styles
+
 .partners {
 
     &__label {
@@ -140,6 +132,7 @@
     }
 
     &__companies {
+        max-width: 68%;
         display: flex;
         flex-wrap: wrap;
         column-gap: 50px;
@@ -150,6 +143,10 @@
     &__company {
     }
 }
+
+
+//- Swiper styles
+
 
 .swiper {
     width: 603px;
@@ -173,9 +170,7 @@
         }
     }
 
-    .swiper-button-prev{
-        color: #fff;
-    }
+    .swiper-button-prev,
     .swiper-button-next{
         color: #fff;
     }
