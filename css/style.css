@@ -261,6 +261,7 @@ a, *::before, *::after {
   row-gap: 10px;
   align-items: center;
 }
+
 .swiper {
   box-shadow: 0 8px 6.5px 0 rgba(0, 0, 0, 0.1), 0 20px 13px 0 rgba(0, 0, 0, 0.1), 0 38px 25px 0 rgba(0, 0, 0, 0.1), 0 65px 47px 0 rgba(0, 0, 0, 0.1), 0 100px 80px 0 rgba(0, 0, 0, 0.1);
 }
@@ -277,9 +278,30 @@ a, *::before, *::after {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.swiper .swiper-button-prev,
-.swiper .swiper-button-next {
-  color: #fff;
+
+.arrows {
+  position: absolute;
+  display: flex;
+  gap: 48px;
+  right: 0;
+  bottom: 30px;
+}
+.arrows__arrow--prev, .arrows__arrow--next {
+  position: static;
+  height: 32px;
+  width: 18px;
+  background: url("../img/arrow.svg") 0 0/100% no-repeat;
+  cursor: pointer;
+}
+.arrows__arrow--prev:hover, .arrows__arrow--prev:active, .arrows__arrow--next:hover, .arrows__arrow--next:active {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
+.arrows__arrow--prev::after, .arrows__arrow--next::after {
+  display: none;
+}
+.arrows__arrow--prev {
+  transform: rotate(180deg);
+  background-position: 0 1.5px;
 }
 
 body {
