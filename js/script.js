@@ -13,3 +13,10 @@ const swiper = new Swiper('.swiper', {
     speed: 800,
     effect: 'slide', // або 'fade', 'cube', 'coverflow'
 });
+
+const hamNenu = document.querySelector('.header__ham-menu');
+const navigation = document.querySelector('.navigation');
+hamNenu.addEventListener('click', () => {
+    navigation.classList.toggle('active');
+    hamNenu.classList.toggle('active');
+});
