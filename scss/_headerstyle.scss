@@ -19,22 +19,50 @@ z-index: 100;
         @media (max-width: 768.98px) {
             display: block;
             width: 50px;
-            height: 50px;
+            height: 40px;
             cursor: pointer;
             position: relative;
-            top:  10px;
+            top:  2px;
             right: 10px;
             z-index: 1000;
+
             & span {
+                position: absolute;
                 display: block;
                 width: 100%;
-                height: 6px;
+                height: 5px;
                 background-color: #474646;
-                margin-bottom: 8px;
                 transition: all 0.3s ease-in-out;
+                
+                &:nth-child(1) {
+                    top: 0;
+                }
+                &:nth-child(2) {
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                &:nth-child(3) {
+                    bottom: 0;
+                }
+            }
+            &.active{
+                span {
+                    transition: all 0.3s ease-in-out;
+                    &:nth-child(1) {
+                        transform: rotate(45deg);
+                        top: 40%;
+                        
+                    }
+                    &:nth-child(2) {
+                        opacity: 0;
+                    }   
+                    &:nth-child(3) {
+                        transform: rotate(-45deg);
+                        bottom: 44%;
+                    }
+                }
             }
         }
-
     }
 }
 .navigation {
@@ -76,7 +104,7 @@ z-index: 100;
             transform: translateY(0);
             padding: 100px 0 0 16px;
             align-items: flex-start;
-            font-size: 42px;
+            font-size: 36px;
             color: #474646;
         }
 
