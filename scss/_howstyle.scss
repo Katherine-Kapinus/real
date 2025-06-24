@@ -14,7 +14,10 @@
 		align-items: start;
 		gap: 150px;
 		margin-top: 40px;
-
+		@media (max-width: 1200.98px) {
+			gap: 100px;
+			
+		}
 
 		@media (max-width: 768.98px) {
 			gap: 16px;
@@ -40,9 +43,31 @@
 
 
 .item {
-
+	position: relative;
+	&::after{
+	content: '';
+	width: 100%;
+	max-width: 210px;
+	height: 11px;
+	position: absolute;
+	top: 17%;
+	left: 86%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	@media (max-width: 1200.98px) {
+		top: 13%;
+		max-width: 160px;
+		}
+	}
+	&:nth-child(1)::after {
+		background-image: url('../img/decoration-line-1.svg');
+	}
+	&:nth-child(2)::after {
+		background-image: url('../img/decoration-line-2.svg');
+	}
+		
 		&__icon {
-			position: relative;
 			margin-inline: auto;
 			border-radius: 20%;
 			width: 90px;
@@ -52,27 +77,13 @@
 			margin-bottom: 35px;
 			&.purple {
 				background-color: #A58CEE;
-				&::after{
-					background: url('../img/decoration-line-1.svg') no-repeat center center;
-				}
 			}
 			&.blue {
 				background-color: #57CFC1;
-					&::after{
-					background: url('../img/decoration-line-2.svg') no-repeat center center;
-				}
 			}
 			&.pink {
 				background-color: #E599DD;
 			}
-			&::after{
-				content: '';
-				width: 300%;
-				height: 18px;
-				position: absolute;
-				top: 40%;
-				left: 120%;
-			}	
 		}
 
 		&__subtitle {
