@@ -3,12 +3,15 @@
     top: 0;
     left: 0;
     width: 100%;
+    overflow: hidden;
 }
 
 
 .main-block {
+    margin-bottom: 120px;
     &__container {
         padding-top: 184px;
+
         position: relative;
         @media (max-width: 1199.98px) {
             padding-top: 240px;
