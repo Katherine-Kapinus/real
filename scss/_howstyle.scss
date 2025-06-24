@@ -12,7 +12,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: start;
-		gap: 24px;
+		gap: 150px;
 		margin-top: 40px;
 
 
@@ -32,7 +32,8 @@
 		flex-direction: column;
 		text-align: center;
 		gap: 16px;
-		
+		flex: 0 1 260px;
+
 	}
 	
 }
@@ -41,6 +42,7 @@
 .item {
 
 		&__icon {
+			position: relative;
 			margin-inline: auto;
 			border-radius: 20%;
 			width: 90px;
@@ -49,13 +51,27 @@
 			justify-content: center;
 			margin-bottom: 35px;
 			&.purple {
-				background-color: #9672FF;
+				background-color: #A58CEE;
+				&::after{
+					background: url('../img/decoration-line-1.svg') no-repeat center center;
+				}
 			}
 			&.blue {
-				background-color: #4DDFFD;
+				background-color: #57CFC1;
+					&::after{
+					background: url('../img/decoration-line-2.svg') no-repeat center center;
+				}
 			}
 			&.pink {
-				background-color: #F2B8EC;
+				background-color: #E599DD;
+			}
+			&::after{
+				content: '';
+				width: 300%;
+				height: 18px;
+				position: absolute;
+				top: 40%;
+				left: 120%;
 			}	
 		}
 
