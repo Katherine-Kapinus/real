@@ -68,9 +68,10 @@ z-index: 100;
 .navigation {
 
     @media (max-width: 768.98px) {
-        position: absolute;
+        position: fixed;
         top: 0;
-        right: -100%;
+        right: 0;
+        transform: translateX(100%);
         transition: all 0.7s ease-in-out; 
         background-color: #e6eaf6a8;
         backdrop-filter: blur(20px);
@@ -79,7 +80,7 @@ z-index: 100;
         z-index: 999;
 
         &.active {
-            right: 0;
+        transform: translateX(0%);
         }
     }
 
