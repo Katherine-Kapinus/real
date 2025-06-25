@@ -688,6 +688,7 @@ a, *::before, *::after {
 }
 .how__title {
   text-align: center;
+  margin-bottom: 40px;
 }
 .how__items {
   display: flex;
@@ -818,12 +819,15 @@ a, *::before, *::after {
 }
 .item__icon.purple {
   background-color: #A58CEE;
+  box-shadow: 0 1.8518518209px 3.1481480598px 0 rgba(149, 114, 255, 0.105), 0 8.1481485367px 6.5185184479px 0 rgba(150, 114, 255, 0.03), 0 20px 13px 0 rgba(150, 114, 255, 0.04), 0 38.5185203552px 25.4814815521px 0 rgba(149, 114, 255, 0.129), 0 64.8148117065px 46.851852417px 0 rgba(150, 114, 255, 0.05), 0 100px 80px 0 rgba(150, 114, 255, 0.07);
 }
 .item__icon.blue {
   background-color: #57CFC1;
+  box-shadow: 0 1.8518518209px 3.1481480598px 0 rgba(77, 223, 253, 0.02), 0 8.1481485367px 6.5185184479px 0 rgba(77, 223, 253, 0.03), 0 20px 13px 0 rgba(77, 223, 253, 0.04), 0 38.5185203552px 25.4814815521px 0 rgba(77, 224, 253, 0.089), 0 64.8148117065px 46.851852417px 0 rgba(77, 223, 253, 0.05), 0 100px 80px 0 rgba(77, 223, 253, 0.07);
 }
 .item__icon.pink {
   background-color: #E599DD;
+  box-shadow: 0 1.8518518209px 3.1481480598px 0 rgba(242, 184, 236, 0.05), 0 8.1481485367px 6.5185184479px 0 rgba(242, 184, 236, 0.05), 0 20px 13px 0 rgba(242, 184, 236, 0.09), 0 38.5185203552px 25.4814815521px 0 rgba(242, 184, 236, 0.24), 0 64.8148117065px 46.851852417px 0 rgba(242, 184, 236, 0.09), 0 100px 80px 0 rgba(242, 184, 236, 0.07);
 }
 @media (max-width: 1200.98px) {
   .item__icon {
@@ -905,10 +909,13 @@ a, *::before, *::after {
   }
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Manrope", sans-serif;
   color: #333;
-  overflow-x: hidden;
 }
 body a {
   color: #333;
