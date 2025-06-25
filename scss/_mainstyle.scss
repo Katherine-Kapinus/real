@@ -9,6 +9,16 @@
 
 .main-block {
     margin-bottom: 120px;
+    @media (max-width: 1199.98px) {
+        margin-bottom: 100px;
+    }
+    @media (max-width: 989.98px) {
+        margin-bottom: 80px;
+    }
+    @media (max-width: 768.98px) {
+        margin-bottom: 60px;
+    }
+
     &__container {
         padding-top: 184px;
 
