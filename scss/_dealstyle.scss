@@ -96,7 +96,7 @@
                 column-gap: 100px;
                 justify-content: flex-start;
                 margin-bottom: 40px;
-                row-gap: 10px;
+                row-gap: 20px;
             }
             @media (max-width: 520.98px) {
                 column-gap: 36px;
@@ -125,6 +125,9 @@
                 height: 2px;
                 background-color: #414044af;
                 transition: width 0.3s ease-in-out;
+                @media (max-width: 678.98px) {
+                    bottom: -7px;
+                }
             }
             &:hover {
                 color: #c46c62;
@@ -140,6 +143,9 @@
                     height: 2px;
                     background-color: #F85A47;
                     transition: width 0.8s ease 0s;
+                    @media (max-width: 678.98px) {
+                        bottom: -7px;
+                    }
                 }
             }
             @media (max-width: 1200.98px) {
@@ -165,17 +171,78 @@
 .item-tabs {
 
 		&__items {
+            display: grid;
+            gap: 24px;
+            grid-template-columns: repeat(3, 1fr);
+            @media (max-width: 1200.98px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @media (max-width: 720.98px) {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 16px;
+            }
 		}
 
+
 		&__item {
+            width: 100%;
+            min-height: 100%;
+            position: relative;
+            & img {
+                width: 100%;
+                height: auto;
+                border-radius: 5px;
+            }
 		}
 
 		&__options {
+            position: absolute;
+            z-index: 10;
+            top: 10px;
+            left: 10px;
+            @media (max-width: 720.98px) and (min-width: 520.98px) {
+                top: 16px;
+                left: 16px;
+            }
 		}
 
 		&__option {
+            border: 2px solid #fff;
+            border-radius: 5px;
+            color: #fff;
+            background-color: rgba(51, 46, 46, 0.601);
+            padding: 6px 10px;
+            font-size: 12px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                background-color: rgba(51, 46, 46, 0.818);
+            }
+            @media (max-width: 1200.98px) {
+                padding: 4px 8px;
+                border: 1px solid #fff;
+                font-size: 11px;
+            }
+            @media (max-width: 720.98px) and (min-width: 520.98px) {
+                border: 2px solid #fff;
+                padding: 6px 10px;
+                font-size: 12px;
+            }
 		}
 
+        &__link {
+            width: 100%;
+            position: relative;
+            z-index: 5;
+            overflow: hidden;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+
+        }
+
 		&__image {
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                transform: scale(1.05);
+            }
 		}
 }

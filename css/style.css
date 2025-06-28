@@ -1043,7 +1043,7 @@ a, *::before, *::after {
          column-gap: 100px;
     justify-content: flex-start;
     margin-bottom: 40px;
-    row-gap: 10px;
+    row-gap: 20px;
   }
 }
 @media (max-width: 520.98px) {
@@ -1077,6 +1077,11 @@ a, *::before, *::after {
   background-color: rgba(65, 64, 68, 0.6862745098);
   transition: width 0.3s ease-in-out;
 }
+@media (max-width: 678.98px) {
+  .tabs-deals__button::after {
+    bottom: -7px;
+  }
+}
 .tabs-deals__button:hover {
   color: #c46c62;
 }
@@ -1093,6 +1098,11 @@ a, *::before, *::after {
   background-color: #F85A47;
   transition: width 0.8s ease 0s;
 }
+@media (max-width: 678.98px) {
+  .tabs-deals__button.active::after {
+    bottom: -7px;
+  }
+}
 @media (max-width: 1200.98px) {
   .tabs-deals__button {
     font-size: 17px;
@@ -1108,6 +1118,85 @@ a, *::before, *::after {
     font-size: 15px;
   }
 }
+.item-tabs__items {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 1200.98px) {
+  .item-tabs__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 720.98px) {
+  .item-tabs__items {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+  }
+}
+.item-tabs__item {
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+}
+.item-tabs__item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.item-tabs__options {
+  position: absolute;
+  z-index: 10;
+  top: 10px;
+  left: 10px;
+}
+@media (max-width: 720.98px) and (min-width: 520.98px) {
+  .item-tabs__options {
+    top: 16px;
+    left: 16px;
+  }
+}
+.item-tabs__option {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  background-color: rgba(51, 46, 46, 0.601);
+  padding: 6px 10px;
+  font-size: 12px;
+  transition: all 0.3s ease-in-out;
+}
+.item-tabs__option:hover {
+  background-color: rgba(51, 46, 46, 0.818);
+}
+@media (max-width: 1200.98px) {
+  .item-tabs__option {
+    padding: 4px 8px;
+    border: 1px solid #fff;
+    font-size: 11px;
+  }
+}
+@media (max-width: 720.98px) and (min-width: 520.98px) {
+  .item-tabs__option {
+    border: 2px solid #fff;
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
+.item-tabs__link {
+  width: 100%;
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.item-tabs__image {
+  transition: all 0.3s ease-in-out;
+}
+.item-tabs__image:hover {
+  transform: scale(1.05);
+}
+
 html, body {
   overflow-x: hidden;
 }
