@@ -1077,7 +1077,13 @@ a, *::before, *::after {
   background-color: rgba(65, 64, 68, 0.6862745098);
   transition: width 0.3s ease-in-out;
 }
-.tabs-deals__button:hover::after {
+.tabs-deals__button:hover {
+  color: #c46c62;
+}
+.tabs-deals__button.active {
+  color: #F85A47;
+}
+.tabs-deals__button.active::after {
   content: "";
   position: absolute;
   left: 0;
@@ -1086,9 +1092,6 @@ a, *::before, *::after {
   height: 2px;
   background-color: #F85A47;
   transition: width 0.8s ease 0s;
-}
-.tabs-deals__button:hover {
-  color: #F85A47;
 }
 @media (max-width: 1200.98px) {
   .tabs-deals__button {
