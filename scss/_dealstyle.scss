@@ -1,0 +1,178 @@
+.deals {
+
+		&__container {
+		}
+
+		&__header {
+		}
+
+		&__tabs {
+		}
+}
+.header-deals {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    @media (max-width: 768.98px) {
+        margin-bottom: 30px;
+    } 
+    @media (max-width: 520.98px) {
+        flex-direction: column;
+        align-items: start;
+        gap: 16px;
+        
+    }
+
+		&__content {
+            flex: 0 1 42%;
+            @media (max-width: 1200.98px) {
+                flex: 0 1 50%;
+            }
+            @media (max-width: 768.98px) {
+                flex: 0 1 70%;
+            }
+		}
+
+		&__title {
+            &:not(:last-child){
+                margin-bottom: 15px;
+                @media (max-width: 768.98px) {
+                    margin-bottom: 10px;
+                }
+            }
+		}
+
+		&__text {
+		}
+
+		&__button {
+            background-color: #F85A47;
+            padding: 22px 32px;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 17px;
+            font-weight: 500;
+            box-shadow: 0 1.8518518209457397px 3.1481480598449707px 0 rgba(248,90,71,.02),0 8.148148536682129px 6.518518447875977px 0 rgba(248,90,71,.03),0 20px 13px 0 rgba(248,90,71,.04),0 38.51852035522461px 25.481481552124023px 0 rgba(248,90,71,.04),0 64.81481170654297px 46.85185241699219px 0 rgba(248,90,71,.05),0 100px 80px 0 rgba(248,90,71,.07);
+            @media (max-width: 768.98px) {
+                padding: 16px 24px;
+                font-size: 15px;
+            }
+            @media (max-width: 580.98px) {
+                padding: 12px 18px;
+                font-size: 14px;
+            }
+            @media (max-width: 520.98px) {
+                width: 100%;
+                text-align: center;
+                padding: 16px 0;
+            }
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                box-shadow: 0 1.8518518209457397px 3.1481480598449707px 0 rgba(248, 89, 71, 0.504),0 8.148148536682129px 6.518518447875977px 0 rgba(248, 89, 71, 0.4),0 20px 13px 0 rgba(248,90,71,.05),0 38.51852035522461px 25.481481552124023px 0 rgba(248,90,71,.05),0 64.81481170654297px 46.85185241699219px 0 rgba(248,90,71,.06),0 100px 80px 0 rgba(248,90,71,.08);
+            }
+            &:active{
+                background-color: #d14839;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            }
+		}
+}
+
+.tabs-deals {
+
+		&__nav {
+            display: flex;
+            column-gap: 8px;
+            max-width: 82%;
+            margin-bottom: 57px;
+            justify-content: space-between;
+            @media (max-width: 1200.98px) {
+                max-width: 100%;
+                flex-wrap: wrap;
+                margin-bottom: 50px;
+            }
+            @media (max-width: 720.98px) {
+                column-gap: 100px;
+                justify-content: flex-start;
+                margin-bottom: 40px;
+                row-gap: 10px;
+            }
+            @media (max-width: 520.98px) {
+                column-gap: 36px;
+                margin-bottom: 30px;
+            }
+            
+            @media (max-width: 360.98px) {
+                column-gap: 12px;
+                margin-bottom: 26px;
+            }
+
+        }
+        
+		&__button {
+            position: relative;
+            background-color: transparent;
+            text-align: left;
+            font-size: 19px;
+            transition: all 0.2s ease-in-out;
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -12px;
+                width: 0;
+                height: 2px;
+                background-color: #414044af;
+                transition: width 0.3s ease-in-out;
+            }
+            &:hover::after{
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -12px;
+                width: 100%;
+                height: 2px;
+                background-color: #F85A47;
+                transition: width 0.8s ease 0s;
+            }
+            &:hover {
+                color: #F85A47;
+            }
+            @media (max-width: 1200.98px) {
+                font-size: 17px;
+            }
+            @media (max-width: 768.98px) {
+                font-size: 16px;
+            }
+            @media (max-width: 520.98px) {
+                font-size: 15px;
+            }
+
+
+		}
+
+		&__body {
+		}
+
+		&__item {
+		}
+}
+
+.item-tabs {
+
+		&__items {
+		}
+
+		&__item {
+		}
+
+		&__options {
+		}
+
+		&__option {
+		}
+
+		&__image {
+		}
+}

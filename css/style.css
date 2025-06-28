@@ -890,6 +890,25 @@ a, *::before, *::after {
   }
 }
 
+.section-container {
+  padding-block: 100px;
+}
+@media screen and (max-width: 1200.98px) {
+  .section-container {
+    padding-block: 80px;
+  }
+}
+@media screen and (max-width: 768.98px) {
+  .section-container {
+    padding-block: 60px;
+  }
+}
+@media screen and (max-width: 520.98px) {
+  .section-container {
+    padding-block: 40px;
+  }
+}
+
 .section-title {
   font-size: 40px;
   font-weight: 600;
@@ -910,6 +929,182 @@ a, *::before, *::after {
   }
 }
 
+.sub-text {
+  font-size: 17px;
+  line-height: 24px;
+}
+@media screen and (max-width: 1200.98px) {
+  .sub-text {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768.98px) {
+  .sub-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.header-deals {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+@media (max-width: 768.98px) {
+  .header-deals {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 520.98px) {
+  .header-deals {
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+  }
+}
+.header-deals__content {
+  flex: 0 1 42%;
+}
+@media (max-width: 1200.98px) {
+  .header-deals__content {
+    flex: 0 1 50%;
+  }
+}
+@media (max-width: 768.98px) {
+  .header-deals__content {
+    flex: 0 1 70%;
+  }
+}
+.header-deals__title:not(:last-child) {
+  margin-bottom: 15px;
+}
+@media (max-width: 768.98px) {
+  .header-deals__title:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+.header-deals__button {
+  background-color: #F85A47;
+  padding: 22px 32px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: 500;
+  box-shadow: 0 1.8518518209px 3.1481480598px 0 rgba(248, 90, 71, 0.02), 0 8.1481485367px 6.5185184479px 0 rgba(248, 90, 71, 0.03), 0 20px 13px 0 rgba(248, 90, 71, 0.04), 0 38.5185203552px 25.4814815521px 0 rgba(248, 90, 71, 0.04), 0 64.8148117065px 46.851852417px 0 rgba(248, 90, 71, 0.05), 0 100px 80px 0 rgba(248, 90, 71, 0.07);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 768.98px) {
+  .header-deals__button {
+    padding: 16px 24px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 580.98px) {
+  .header-deals__button {
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 520.98px) {
+  .header-deals__button {
+    width: 100%;
+    text-align: center;
+    padding: 16px 0;
+  }
+}
+.header-deals__button:hover {
+  box-shadow: 0 1.8518518209px 3.1481480598px 0 rgba(248, 89, 71, 0.504), 0 8.1481485367px 6.5185184479px 0 rgba(248, 89, 71, 0.4), 0 20px 13px 0 rgba(248, 90, 71, 0.05), 0 38.5185203552px 25.4814815521px 0 rgba(248, 90, 71, 0.05), 0 64.8148117065px 46.851852417px 0 rgba(248, 90, 71, 0.06), 0 100px 80px 0 rgba(248, 90, 71, 0.08);
+}
+.header-deals__button:active {
+  background-color: #d14839;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tabs-deals__nav {
+  display: flex;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  max-width: 82%;
+  margin-bottom: 57px;
+  justify-content: space-between;
+}
+@media (max-width: 1200.98px) {
+  .tabs-deals__nav {
+    max-width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 720.98px) {
+  .tabs-deals__nav {
+    -moz-column-gap: 100px;
+         column-gap: 100px;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    row-gap: 10px;
+  }
+}
+@media (max-width: 520.98px) {
+  .tabs-deals__nav {
+    -moz-column-gap: 36px;
+         column-gap: 36px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 360.98px) {
+  .tabs-deals__nav {
+    -moz-column-gap: 12px;
+         column-gap: 12px;
+    margin-bottom: 26px;
+  }
+}
+.tabs-deals__button {
+  position: relative;
+  background-color: transparent;
+  text-align: left;
+  font-size: 19px;
+  transition: all 0.2s ease-in-out;
+}
+.tabs-deals__button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  width: 0;
+  height: 2px;
+  background-color: rgba(65, 64, 68, 0.6862745098);
+  transition: width 0.3s ease-in-out;
+}
+.tabs-deals__button:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  width: 100%;
+  height: 2px;
+  background-color: #F85A47;
+  transition: width 0.8s ease 0s;
+}
+.tabs-deals__button:hover {
+  color: #F85A47;
+}
+@media (max-width: 1200.98px) {
+  .tabs-deals__button {
+    font-size: 17px;
+  }
+}
+@media (max-width: 768.98px) {
+  .tabs-deals__button {
+    font-size: 16px;
+  }
+}
+@media (max-width: 520.98px) {
+  .tabs-deals__button {
+    font-size: 15px;
+  }
+}
 html, body {
   overflow-x: hidden;
 }
