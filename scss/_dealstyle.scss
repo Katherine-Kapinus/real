@@ -173,6 +173,9 @@
 
 		&__items {
             display: none;
+            &:not(:last-child) {
+                margin-bottom: 24px;
+            }
             &.active{
                 display: grid;
                 gap: 24px;

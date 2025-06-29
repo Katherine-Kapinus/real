@@ -1122,6 +1122,9 @@ a, *::before, *::after {
 .item-tabs__items {
   display: none;
 }
+.item-tabs__items:not(:last-child) {
+  margin-bottom: 24px;
+}
 .item-tabs__items.active {
   display: grid;
   gap: 24px;
