@@ -1119,6 +1119,18 @@ a, *::before, *::after {
     font-size: 15px;
   }
 }
+.item-tabs.show-all {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+.item-tabs.show-all .item-tabs__items {
+  display: contents;
+}
+.item-tabs.show-all .item-tabs__item {
+  display: block;
+}
+
 .item-tabs__items {
   display: none;
 }

@@ -24,6 +24,8 @@ hamNenu.addEventListener('click', () => {
 document.addEventListener('DOMContentLoaded', function () {
     const dealButtons = document.querySelectorAll('.tabs-deals__button');
     const tabsItems = document.querySelectorAll('.item-tabs__items');
+    const headerMainButton = document.querySelector('.header-deals__button');
+    const dealsItem = document.querySelector('.tabs-deals__item');
     
     if (dealButtons.length > 0) {
         // Спочатку додаємо клас active першій кнопці та табу
@@ -36,6 +38,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 // При кліку прибираємо active у всіх
                 dealButtons.forEach(btn => btn.classList.remove('active'));
                 tabsItems.forEach(item => item.classList.remove('active'));
+
+                // Прибираємо show-all
+                dealsItem.classList.remove('show-all');
                 
                 // Додаємо active тільки тій, на яку натиснули
                 this.classList.add('active');
@@ -44,15 +49,14 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
     
-    const headerMainButton = document.querySelector('.header-deals__button');
-    const dealsBody = document.querySelector('.tabs-deals__body');
 
     if (headerMainButton) {
         headerMainButton.addEventListener('click', function () {
-            // Прибираємо всі активні кнопки
+            
             dealButtons.forEach(btn => btn.classList.remove('active'));
-            // Додаємо active до всіх item-tabs__items
-            tabsItems.forEach(item => item.classList.add('active'));
+            tabsItems.forEach(item => item.classList.remove('active'));
+            
+            dealsItem.classList.add('show-all');
         });
     }
 });
