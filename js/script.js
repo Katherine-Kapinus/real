@@ -23,19 +23,23 @@ hamNenu.addEventListener('click', () => {
 
 document.addEventListener('DOMContentLoaded', function () {
     const dealButtons = document.querySelectorAll('.tabs-deals__button');
+    const tabsItems = document.querySelectorAll('.item-tabs__items');
 
     if (dealButtons.length > 0) {
-    // Спочатку додаємо клас active першій кнопці
+    // Спочатку додаємо клас active першій кнопці та табу
         dealButtons[0].classList.add('active');
+        tabsItems[0].classList.add('active');
 
     // Додаємо обробник подій на всі кнопки
-        dealButtons.forEach(button => {
+        dealButtons.forEach((button, index) => {
             button.addEventListener('click', function () {
         // При кліку прибираємо active у всіх
                 dealButtons.forEach(btn => btn.classList.remove('active'));
+                tabsItems.forEach(item => item.classList.remove('active'));
 
         // Додаємо active тільки тій, на яку натиснули
                 this.classList.add('active');
+                tabsItems[index].classList.add('active');
             });
         });
     }

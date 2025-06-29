@@ -172,16 +172,19 @@
 .item-tabs {
 
 		&__items {
-            display: grid;
-            gap: 24px;
-            grid-template-columns: repeat(3, 1fr);
-            // margin-bottom: 24px;
-            @media (max-width: 1200.98px) {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            @media (max-width: 720.98px) {
-                grid-template-columns: repeat(1, 1fr);
-                gap: 16px;
+            display: none;
+            &.active{
+                display: grid;
+                gap: 24px;
+                grid-template-columns: repeat(3, 1fr);
+                // margin-bottom: 24px;
+                @media (max-width: 1200.98px) {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+                @media (max-width: 720.98px) {
+                    grid-template-columns: repeat(1, 1fr);
+                    gap: 16px;
+                }
             }
 		}
 
