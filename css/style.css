@@ -1527,9 +1527,19 @@ a, *::before, *::after {
   line-height: 1.3;
   margin-bottom: 51px;
 }
+@media (max-width: 1200.98px) {
+  .review__title {
+    width: 70%;
+  }
+}
 .review__items {
   display: flex;
   gap: 24px;
+}
+@media (max-width: 768.98px) {
+  .review__items {
+    flex-direction: column;
+  }
 }
 .review__item {
   flex: 0 1 33.333%;
@@ -1539,12 +1549,24 @@ a, *::before, *::after {
   display: flex;
   row-gap: 24px;
   flex-direction: column;
-  box-shadow: 3px 44px 54px 0 rgba(0, 0, 0, 0.08), 0 8.1481485367px 6.5185184479px 0 rgba(0, 0, 0, 0.01), 0 20px 13px 0 rgba(0, 0, 0, 0.01), 0 38.5185203552px 25.4814815521px 0 rgba(0, 0, 0, 0.02), 0 64.8148117065px 46.851852417px 0 rgba(0, 0, 0, 0.02), 0 100px 80px 0 rgba(0, 0, 0, 0.03);
+  box-shadow: 3px 10px 12px 0 rgba(0, 0, 0, 0.08), 0 8.1481485367px 6.5185184479px 0 rgba(0, 0, 0, 0.01), 0 20px 13px 0 rgba(0, 0, 0, 0.01), 0 38.5185203552px 25.4814815521px 0 rgba(0, 0, 0, 0.02), 0 64.8148117065px 46.851852417px 0 rgba(0, 0, 0, 0.02), 0 100px 80px 0 rgba(0, 0, 0, 0.03);
 }
-
+@media (max-width: 1200.98px) {
+  .review__item {
+    padding: 32px 20px;
+  }
+}
 .item-review__stars {
   display: flex;
   gap: 3px;
+}
+@media (max-width: 768.98px) {
+  .item-review__stars {
+    order: 2;
+    position: absolute;
+    right: 8%;
+    margin-top: 2%;
+  }
 }
 .item-review__text {
   color: #333;
@@ -1552,11 +1574,38 @@ a, *::before, *::after {
   margin-bottom: 36px;
   flex-grow: 1;
 }
+@media (max-width: 1200.98px) {
+  .item-review__text {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768.98px) {
+  .item-review__text {
+    order: 3;
+  }
+}
 .item-review__person {
   display: flex;
   align-items: center;
   -moz-column-gap: 24px;
        column-gap: 24px;
+}
+@media (max-width: 1200.98px) {
+  .item-review__person {
+    -moz-column-gap: 12px;
+         column-gap: 12px;
+  }
+}
+@media (max-width: 768.98px) {
+  .item-review__person {
+    order: 1;
+    position: relative;
+  }
+}
+.item-review__image {
+  border-radius: 50%;
+  background-color: inherit;
+  overflow: hidden;
 }
 .item-review__info {
   line-height: 1.2;
