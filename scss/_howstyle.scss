@@ -128,26 +128,28 @@
 			&.purple {
 				background-color: #A58CEE;
 				box-shadow: 0 1px 3px 0 rgba(149, 114, 255, 0.105),0 8px 6px 0 rgba(150,114,255,.03),0 20px 13px 0 rgba(150,114,255,.04),0 38px 25px 0 rgba(149, 114, 255, 0.129),0 64px 46px 0 rgba(150,114,255,.05),0 100px 80px 0 rgba(150,114,255,.07);
-				transition: all 0.3s ease-in-out;
+				transition: all 0.1s ease-in;
+				transition: all 0.3s ease-out;
 				&:hover {
-
-					box-shadow: 0 1px 3px 0 rgba(149, 114, 255, 0.237),0 15px 20px 0 rgba(149, 114, 255, 0.297),0 20px 13px 0 rgba(150,114,255,.04),0 38px 25px 0 rgba(149, 114, 255, 0.129),0 64px 46px 0 rgba(150,114,255,.05),0 100px 80px 0 rgba(150,114,255,.07);
+					box-shadow: 0 1px 30px 0 rgba(149, 114, 255, 0.237),0 15px 20px 0 rgba(149, 114, 255, 0.297),0 20px 15px 0 rgba(150,114,255,.04),0 38px 25px 0 rgba(149, 114, 255, 0.129),0 64px 46px 0 rgba(150,114,255,.05),0 100px 80px 0 rgba(150,114,255,.07);
 				}
 			}
 			&.blue {
 				background-color: #57CFC1;
 				box-shadow: 0 1px 3px 0 rgba(77,223,253,.02),0 8px 6px 0 rgba(77,223,253,.03),0 20px 13px 0 rgba(77,223,253,.04),0 38px 25px 0 rgba(77, 224, 253, 0.089),0 64px 46px 0 rgba(77,223,253,.05),0 100px 80px 0 rgba(77,223,253,.07);
-				transition: all 0.3s ease-in-out;
+				transition: all 0.1s ease-in;
+				transition: all 0.3s ease-out;
 				&:hover {
-					box-shadow: 0 1px 3px 0 rgba(146, 230, 191, 0.467),0 15px 20px 0 rgba(140, 239, 211, 0.466),0 20px 13px 0 rgba(77,223,253,.04),0 38px 25px 0 rgba(77, 224, 253, 0.089),0 64px 46px 0 rgba(77,223,253,.05),0 100px 80px 0 rgba(77,223,253,.07);
+					box-shadow: 0 1px 30px 0 rgba(146, 230, 191, 0.467),0 15px 20px 0 rgba(140, 239, 211, 0.466),0 20px 13px 0 rgba(77,223,253,.04),0 38px 25px 0 rgba(77, 224, 253, 0.089),0 64px 46px 0 rgba(77,223,253,.05),0 100px 80px 0 rgba(77,223,253,.07);
 				}
 			}
 			&.pink {
 				background-color: #E599DD;
 				box-shadow: 0 1px 3px 0 rgba(242,184,236,.05),0 8px 6px 0 rgba(242,184,236,.05),0 20px 13px 0 rgba(242,184,236,.09),0 38px 25px 0 rgba(242, 184, 236, 0.24),0 64px 46px 0 rgba(242, 184, 236, 0.09),0 100px 80px 0 rgba(242,184,236,.07);
-				transition: all 0.3s ease-in-out;
+				transition: all 0.1s ease-in;
+				transition: all 0.3s ease-out;
 				&:hover{
-					box-shadow: 0 1px 3px 0 rgba(225, 146, 217, 0.534),0 15px 20px 0 rgba(242, 184, 236, 0.593),0 20px 13px 0 rgba(242, 184, 236, 0.077),0 38px 25px 0 rgba(242, 184, 236, 0.24),0 64px 46px 0 rgba(242, 184, 236, 0.09),0 100px 80px 0 rgba(242,184,236,.07);
+					box-shadow: 0 1px 30px 0 rgba(207, 161, 202, 0.422),0 15px 20px 0 rgba(239, 172, 231, 0.593),0 20px 13px 0 rgba(242, 184, 236, 0.077),0 38px 25px 0 rgba(242, 184, 236, 0.24),0 64px 46px 0 rgba(242, 184, 236, 0.09),0 100px 80px 0 rgba(242,184,236,.07);
 				}
 			}
 			@media (max-width: 1200.98px) {
