@@ -1551,10 +1551,12 @@ a, *::before, *::after {
 .review__items {
   display: flex;
   gap: 24px;
+  margin-bottom: 85px;
 }
 @media (max-width: 768.98px) {
   .review__items {
     flex-direction: column;
+    margin-bottom: 40px;
   }
 }
 .review__item {
@@ -1635,6 +1637,18 @@ a, *::before, *::after {
   font-size: 14px;
 }
 
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+.info__partners {
+  display: flex;
+  justify-content: space-around;
+  flex: 1 1 65%;
+}
+.info__cta {
+  flex: 1 1 35%;
+}
 html, body {
   overflow-x: hidden;
 }

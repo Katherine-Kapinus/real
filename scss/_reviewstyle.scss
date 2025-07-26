@@ -15,8 +15,10 @@
 		&__items {
 			display:flex;
 			gap: 24px;
+			margin-bottom: 85px;
 			@media (max-width: 768.98px){
 				flex-direction: column;
+				margin-bottom: 40px;
 			}
 		}
 
@@ -98,5 +100,34 @@
 		&__location {
 			color: #666;
 			font-size: 14px;
+		}
+}
+
+//! info-block
+
+.info {
+	display: flex;
+	justify-content: space-between;
+
+		&__partners {
+			display: flex;
+			justify-content: space-around;
+			flex: 1 1 65%;
+		}
+
+		&__partner {
+		}
+
+		&__cta {
+			flex: 1 1 35%;
+		}
+
+		&__text {
+		}
+
+		&__phone {
+		}
+
+		&__pricing-link {
 		}
 }
