@@ -322,6 +322,9 @@
         &:hover{
             transform: translateY(-3px);
         }
+        &:active{
+            transform: scale(0.9);
+        }
         @media (max-width: 1199.98px) {
             max-width: 20%;
         }

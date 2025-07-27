@@ -5,20 +5,7 @@
 
 		&__title {
             text-align: center;
-            padding-bottom: 45px;
-            @media (max-width: 1200.98px) {
-                padding-bottom: 30px;
-            }
-            @media (max-width: 768.98px) {
-                padding-bottom: 20px;
-            }
-            @media (max-width: 520.98px) {
-                padding-bottom: 10px;
-            }
-            @media (max-width: 360.98px) {
-                padding-bottom: 0;
-                }
-            
+            padding-bottom: 15px;
 		}
 
 		&__content {

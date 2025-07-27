@@ -16,16 +16,19 @@
     font-size: 40px;
     font-weight: 600;
     @media screen and (max-width: 1200.98px) {
+        margin-bottom: 30px;
         font-size: 32px;
     }
     @media screen and (max-width: 768.98px) {
+        margin-bottom: 20px;
         font-size: 28px;
     }
-    @media screen and (max-width: 520.98px) {
-        font-size: 24px;
+    @media screen and (max-width: 580.98px) {
+        margin-bottom: 18px;
+        font-size: 26px;
     }
     @media (max-width: 360.98px) {
-        font-size: 20px;
+        font-size: 22px;
     }
 
 }
