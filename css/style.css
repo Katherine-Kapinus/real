@@ -1932,11 +1932,22 @@ a, *::before, *::after {
   }
 }
 
+.footer {
+  margin-top: 60px;
+}
 .footer__container {
+  padding-bottom: 36px;
+  border-top: 1px solid rgba(51, 51, 51, 0.2274509804);
+}
+.footer__body {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
+  margin-bottom: 77px;
+}
+.footer__copyright {
+  text-align: center;
 }
 
 html, body {

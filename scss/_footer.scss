@@ -1,9 +1,22 @@
 .footer {
+    margin-top: 60px;
+    &__container {
+        padding-bottom: 36px;
+        border-top: 1px solid #3333333a;
+    }
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 77px;
+    }
 
-		&__container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 10px;
-		}
+
+    &__copyright {
+        text-align: center;
+
+    }
 }
+
+
