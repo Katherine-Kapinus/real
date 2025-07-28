@@ -1,5 +1,4 @@
 .header {
-z-index: 100;
     &__container {
         min-height: 103px;
         padding: 10px 0;
@@ -9,10 +8,10 @@ z-index: 100;
         gap: 10px;
     }
 
-    &__logo {
-        font-size: 23px;
-        font-weight: 800;
-    }
+    // &__logo {
+    //     font-size: 23px;
+    //     font-weight: 800;
+    // }
 
     &__ham-menu{
         display: none;
