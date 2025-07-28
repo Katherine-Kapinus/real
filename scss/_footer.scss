@@ -10,13 +10,45 @@
         align-items: center;
         gap: 10px;
         margin-bottom: 77px;
+        @media (max-width: 768.98px){
+            flex-direction: column;
+            
+        }
     }
 
+    &__logo {
+    }
+
+    &__nav {
+
+    }
 
     &__copyright {
         text-align: center;
 
     }
+}
+
+.navigation {
+
+		&__list {
+            @media (max-width: 768.98px){
+                margin-top: 20px;
+                justify-content: center;
+            }
+            @media (max-width: 540px) {
+                column-gap: 96px;
+            }
+            @media (max-width: 460px) {
+                column-gap: 70px;
+            }
+		}
+
+		&__item {
+		}
+
+		&__link {
+		}
 }
 
 
