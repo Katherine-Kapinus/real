@@ -5,21 +5,26 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
     },
-    // необов'язково, якщо потрібно:
-    // autoplay: {
-    // delay: 3000,
-    // disableOnInteraction: false,
-    // },
+
     speed: 800,
-    effect: 'slide', // або 'fade', 'cube', 'coverflow'
+    effect: 'slide',
 });
 
-const hamNenu = document.querySelector('.header__ham-menu');
+const hamMenu = document.querySelector('.header__ham-menu');
 const navigation = document.querySelector('.navigation');
-hamNenu.addEventListener('click', () => {
+const navItem = document.querySelectorAll('.navigation__link');
+hamMenu.addEventListener('click', () => {
     navigation.classList.toggle('active');
-    hamNenu.classList.toggle('active');
+    hamMenu.classList.toggle('active');
 });
+
+navItem.forEach(item => {
+    item.addEventListener('click', () => {
+        navigation.classList.remove('active');
+        hamMenu.classList.remove('active'); // якщо хочеш ще й бургер анімацію прибрати
+    });
+});
+
 
 document.addEventListener('DOMContentLoaded', function () {
     const dealButtons = document.querySelectorAll('.tabs-deals__button');
