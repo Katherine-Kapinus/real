@@ -169,7 +169,7 @@ a, *::before, *::after {
   }
 }
 @media (max-width: 768.98px) {
-  .navigation__list.header-navigation {
+  .navigation__list.header-navigation__list {
     flex-direction: column;
     row-gap: 24px;
     transform: translateY(0);
